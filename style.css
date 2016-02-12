@@ -1,0 +1,283 @@
+#section1 h1 {
+    margin: 40px 0 0 0px;
+    color: white;
+    font-weight: 100;
+    float: left;
+    font-size: 45px;
+    height: 150px;
+    width: 650px;
+}
+body {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+}
+ul {
+    margin-top: 0;
+    text-align: center;
+    padding: 8px;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+#navbar {
+    width: 100%;
+    top: 0;
+    position: fixed;
+    background-color: rgba(255,153,0,0.9);
+    height: 35px;
+    box-shadow: 0 1px 10px black;
+    z-index: 1;
+}
+
+li:hover {
+    background-color: rgb(215,105,30);
+    color: black;
+    transition: 0.5s;
+}
+
+li .current {
+    background-color: red;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#me {
+    margin: 0 50px 0 0;
+    float: right;
+    background: url("images/me1.png") no-repeat;
+    background-size: 200px;
+    height: 280px;
+    width: 200px;
+}
+
+#me:hover {
+    background-image: url("images/mehov2.png");
+}
+
+#section1 .container {
+    width: 900px;
+    margin: auto;
+    padding-top: 100px;
+    
+}
+#section1 {
+    margin: 0;
+    background: url("images/sahara.jpg") no-repeat center fixed;
+    background-size: cover;
+    height: 720px; 
+}
+
+
+#section2 .container {
+    margin: 0 auto;
+    width: 900px;
+}
+
+#section2 {
+    box-shadow: 0 -1px 10px black;
+    margin: 0;
+    background-color: #EDEDED;
+    height: 720px; 
+}
+
+
+#section2 h1 {
+    margin: 0 auto;
+    padding-top: 70px;
+    width: auto;
+    color: dimgrey;
+    text-align: center;
+    font-size: 50px
+}
+
+#section2 #text1 {
+    margin: 105px 0 0 0;
+    position: absolute;
+    width: 800px;
+    font-size: 30px;
+    color: dimgrey;
+    float: left;
+}
+
+#section2 #text2 {
+    position: relative;
+    margin-top: -150px;
+    width: 70%;
+    font-size: 30px;
+    color: dimgrey;
+    float: right;
+}
+
+#section3 {
+    background-color: #37495B;
+    height: 720px; 
+}
+
+#section3 .container {
+    margin: 0 auto;
+    width: 900px;
+}
+
+#section3 #form {
+    float: left;
+}
+#section3 #links {
+    margin-top: 30px;
+    width: 28.9%;
+    height: 392px;
+    float: right;
+}
+
+#section3 h1 {
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    width: auto;
+    color: white;
+    text-align: center;
+    font-size: 50px
+}
+
+input[type="submit"]{
+    border-style: none;
+    width: 150px;
+    background: orange;
+    color: white;
+    font-size: 16px;
+}
+
+#section3 label {
+    color: white;
+}
+
+#section3 input {
+    font-family: inherit;
+    padding: 5px;
+    height: 30px;
+    margin: 10px;
+    border-style: none;
+}
+
+#section3 textarea {
+    font-family: inherit;
+    height: 150px;
+    width: 400px;
+    margin: 10px;
+    border-style: none;
+    padding: 5px;
+}
+
+#logo {
+    border-style: none;
+    float: left;
+    margin-left: 10px;
+    background: url("images/logo.png");
+    height: 35px;
+    width: 35px;
+    background-size: 35px;
+}
+
+
+
+#circle {
+    position: relative;
+    height: 500px;
+    width: 500px;
+    border-radius: 250px;
+    background-color:#E4D38B;
+    float: right;
+    opacity: 0.7;
+}
+
+#section3 img:hover {
+    -webkit-filter: grayscale(100%);
+}
+
+@media (max-width: 900px) {
+
+    #section1 .container {
+        height: auto;
+        width: auto;
+    }
+    
+    #section2 .container {
+        width: auto;
+        height: auto;
+    }
+    
+    #section1 h1 {
+        height: auto;
+        width: auto;
+        text-align: center;
+        float: none;
+        margin: 0 auto;
+        font-size: 30px;
+    }
+    
+    #me {
+        margin: 0 auto;
+        margin-top: 20px;
+        float: none;
+    }
+    
+    #section2 h1 {
+        font-size: 30px;
+        height: auto;
+        margin: 0 auto;
+        width: auto;
+        text-align: center;
+    }
+    
+    #section2 #text1 {
+        margin: 100px 20px;
+        width: 80%;
+        font-size: 22px;
+    }
+    
+    #section2 #text2 {
+        top:-20px;
+        margin-right: 20px;
+        width: 80%;
+        font-size: 25px;
+        text-align: right;
+    }
+    
+    #section3 .container {
+        width: auto;
+        height: auto;
+    }
+    
+    #section3 h1 {
+        width: 50%;
+        font-size: 30px;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    
+    #section3 #form {
+        margin: 0 30px;
+        background-color: none;
+        float: none;
+        width: 50%;
+    }
+    
+    #section3 #links {
+        float: none;
+        height: 50px;
+        width: 55%;
+        margin: 25px auto;
+    }
+    
+    #section3 img {
+        height: 80%;
+    }
+}
+
