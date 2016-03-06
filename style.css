@@ -127,6 +127,7 @@ a {
 
 #section3 #form {
     float: left;
+    width: 50%;
 }
 #section3 #links {
     margin-top: 30px;
@@ -147,7 +148,6 @@ a {
 
 input[type="submit"]{
     border-style: none;
-    width: 150px;
     background: orange;
     color: white;
     font-size: 16px;
@@ -157,6 +157,8 @@ input[type="submit"]{
     color: white;
 }
 
+
+
 #section3 input {
     font-family: inherit;
     padding: 5px;
@@ -165,10 +167,8 @@ input[type="submit"]{
     border-style: none;
 }
 
-#section3 textarea {
+textarea {
     font-family: inherit;
-    height: 150px;
-    width: 400px;
     margin: 10px;
     border-style: none;
     padding: 5px;
@@ -263,10 +263,10 @@ input[type="submit"]{
     }
     
     #section3 #form {
-        margin: 0 30px;
+        margin: 0 auto;
         background-color: none;
         float: none;
-        width: 50%;
+        width: 80%;
     }
     
     #section3 #links {
@@ -279,5 +279,10 @@ input[type="submit"]{
     #section3 img {
         height: 80%;
     }
+    
+    #section3 textarea {
+        width: 80em;
+    }
+
 }
 

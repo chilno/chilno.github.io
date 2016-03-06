@@ -10,3 +10,7 @@ $("#me").click(function(){
     alert("Yep, it's me!")
 });
 
+var test = document.getElementsByTagName("input");
+for(var i=0; i<test.length; i++){
+    test[i].style.width = "90%";
+}
