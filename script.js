@@ -11,6 +11,6 @@ $("#me").click(function(){
 });
 
 var test = document.getElementsByTagName("input");
-for(var i=0; i<test.length; i++){
+for(var i=0; i<test.length-1; i++){
     test[i].style.width = "90%";
 }
