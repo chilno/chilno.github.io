@@ -30,11 +30,6 @@ a {
     transition: 0.5s;
 }
 
-.well{
-    ba
-}
-
-
 .clear{
     clear: both;
 }
@@ -98,7 +93,7 @@ a {
 }
 
 .well{
-    margin: 90px 0 100px 0;
+    margin: 100px 0 150px 0;
 }
 .scrolled{
     background-color:rgba(255,153,0,0.9);
@@ -106,23 +101,20 @@ a {
 }
 
 .circle {
-    /*position: relative;*/
     margin: 10px 250px;
     height: 500px;
     width: 500px;
     border-radius: 250px;
     background-color:#E4D38B;
-    float: right;
     opacity: 0.7;
 }
 
 #text1 {
     margin: 65px 0 0 50px;
     position: absolute;
-    width: /*800px*/70%;
+    width: 60%;
     font-size: 30px;
     color: dimgrey;
-    float: left;
 }
 
 #text2 {
@@ -132,7 +124,6 @@ a {
     width: 70%;
     font-size: 30px;
     color: dimgrey;
-    float: right;
     text-align: right;
 }
 
@@ -192,7 +183,6 @@ textarea {
     }
     #about-me h1 {
         text-align: center;
-        float: none;
         font-size: 30px;
     }
     #me{
@@ -203,8 +193,13 @@ textarea {
     margin: 50px 0 50px 0;
     }
     
-    #text1, #text2{
+    #text2{
         font-size: 22px;
+    }
+    
+    #text1{
+        font-size: 22px;
+        width: 70%;
     }
     
     #section2 h1{
@@ -232,5 +227,9 @@ textarea {
     
     #links a{
     width: 40px;
+    }
+    
+    .circle {
+    margin: 10px 130px;
     }
 }
