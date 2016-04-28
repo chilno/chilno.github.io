@@ -1,199 +1,113 @@
-#section1 h1 {
-    margin: 40px 0 0 0px;
-    color: white;
-    font-weight: 100;
-    float: left;
-    font-size: 45px;
-    height: 150px;
-    width: 650px;
-}
-body {
-    width: 100%;
+*{
     margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url("images/sahara.jpg") no-repeat center center fixed;
+    background-size: cover;
     font-family: "Raleway", sans-serif;
 }
-ul {
-    margin-top: 0;
-    text-align: center;
-    padding: 8px;
+.navbar a {
+    color: rgb(255,215,10);
+    font-weight: 600;
 }
-
-li {
-    display: inline;
-    padding: 10px;
-    transition: 0.5s;
+.glyphicon {
+    color: rgb(255,215,10);
+    font-weight: 600;
 }
-
-#navbar {
-    width: 100%;
-    top: 0;
-    position: fixed;
-    background-color: rgba(255,153,0,0.9);
-    height: 35px;
-    box-shadow: 0 1px 10px black;
-    z-index: 1;
+#nav-buttons {
+    width: 320px;
+    margin: 0 auto;
 }
-
-li:hover {
-    background-color: rgb(215,105,30);
-    color: black;
-    transition: 0.5s;
-}
-
-li .current {
-    background-color: red;
-}
-
 a {
-    text-decoration: none;
-    color: white;
+    transition: 0.5s;
+}
+.custom > li > a:hover {
+    background-color: transparent;
+    color: chocolate;
+    font-size: 120%;
+    transition: 0.5s;
+}
+
+.well{
+    ba
+}
+
+
+.clear{
+    clear: both;
+}
+
+#about-me{
+    margin: 100px 0;
+}
+
+#about-me h1 {
+    color: aliceblue;
+    font-size: 50px;
+    width: auto;
+    margin: 40px 0;
 }
 
 #me {
-    margin: 0 50px 0 0;
-    float: right;
-    background: url("images/me1.png") no-repeat;
+    background: url("images/me1.png")no-repeat;
     background-size: 200px;
     height: 280px;
     width: 200px;
+    float: right;
+    margin-right: 40px;
 }
 
 #me:hover {
     background-image: url("images/mehov2.png");
 }
 
-#section1 .container {
-    width: 900px;
-    margin: auto;
-    padding-top: 100px;
-    
-}
-#section1 {
-    margin: 0;
-    background: url("images/sahara.jpg") no-repeat center fixed;
-    background-size: cover;
-    height: 720px; 
+#section1{
+    height: 720px;
 }
 
-
-#section2 .container {
-    margin: 0 auto;
-    width: 900px;
-}
-
-#section2 {
+#section2{
+    background-color: gray;
+    height: 720px;
     box-shadow: 0 -1px 10px black;
-    margin: 0;
     background-color: #EDEDED;
-    height: 720px; 
-}
-
-
-#section2 h1 {
-    margin: 0 auto;
-    padding-top: 70px;
-    width: auto;
-    color: dimgrey;
-    text-align: center;
-    font-size: 50px
-}
-
-#section2 #text1 {
-    margin: 105px 0 0 0;
-    position: absolute;
-    width: 800px;
-    font-size: 30px;
-    color: dimgrey;
-    float: left;
-}
-
-#section2 #text2 {
     position: relative;
-    margin-top: -150px;
-    width: 70%;
-    font-size: 30px;
-    color: dimgrey;
-    float: right;
 }
 
-#section3 {
+#section3{
     background-color: #37495B;
-    height: 720px; 
 }
 
-#section3 .container {
-    margin: 0 auto;
-    width: 900px;
+#section3 h1{
+    margin: 60px 0 0 0;
+    color: aliceblue;
 }
 
-#section3 #form {
-    float: left;
-    width: 50%;
-}
-#section3 #links {
-    margin-top: 30px;
-    width: 28.9%;
-    height: 392px;
-    float: right;
-}
-
-#section3 h1 {
-    margin: 0 auto;
-    padding-top: 70px;
-    padding-bottom: 50px;
-    width: auto;
-    color: white;
+#section2 h1{
     text-align: center;
-    font-size: 50px
+    width: auto;
+    color: dimgrey;
+    font-size: 50px;
+    padding-top: 30px
 }
 
-input[type="submit"]{
-    border-style: none;
-    background: orange;
-    color: white;
-    font-size: 16px;
+#section4{
+    background-color: #EDEDED;
+    height: auto;
 }
 
-#section3 label {
-    color: white;
+.well{
+    margin: 90px 0 100px 0;
+}
+.scrolled{
+    background-color:rgba(255,153,0,0.9);
+    box-shadow: 0 1px 10px black;
 }
 
-
-
-#section3 input {
-    font-family: inherit;
-    padding: 5px;
-    height: 30px;
-    margin: 10px;
-    border-style: none;
-}
-
-textarea {
-    font-family: inherit;
-    margin: 10px;
-    border-style: none;
-    padding: 5px;
-    height: 150px;
-    width: 90%;
-}
-
-#logo {
-    border-style: none;
-    float: left;
-    margin-left: 10px;
-    background: url("images/logo.png");
-    height: 35px;
-    width: 35px;
-    background-size: 35px;
-}
-#button {
-        width: 92%;
-    }
-
-
-
-#circle {
-    position: relative;
+.circle {
+    /*position: relative;*/
+    margin: 10px 250px;
     height: 500px;
     width: 500px;
     border-radius: 250px;
@@ -202,97 +116,121 @@ textarea {
     opacity: 0.7;
 }
 
-#section3 img:hover {
+#text1 {
+    margin: 65px 0 0 50px;
+    position: absolute;
+    width: /*800px*/70%;
+    font-size: 30px;
+    color: dimgrey;
+    float: left;
+}
+
+#text2 {
+    margin-right: 50px;
+    position: relative;
+    top: -150px;
+    width: 70%;
+    font-size: 30px;
+    color: dimgrey;
+    float: right;
+    text-align: right;
+}
+
+#section4 input {
+    width: 100%;
+    padding: 5px;
+    height: 30px;
+    margin: 10px;
+    border-style: none;
+}
+
+#section4 h1{
+    margin: 60px 0;
+}
+
+textarea {
+    font-family: inherit;
+    margin: 10px;
+    border-style: none;
+    padding: 5px;
+    height: 150px;
+    width: 100%;
+}
+
+#links{
+    margin: 20px 0px;
+    width: 300px;
+}
+
+#links a{
+    display: inline-block;
+    margin: 2px;
+}
+
+#section4 img:hover {
     -webkit-filter: grayscale(100%);
 }
 
-@media (max-width: 900px) {
+#footer{
+    background-color: #37495B;
+    color: aliceblue;
+    text-align: right;
+    padding-right: 20px;
+    margin: 30px 0;
+    overflow: hidden;
+}
 
-    #section1 .container {
-        height: auto;
+#button:hover{
+    background-color: #37495B;
+    color: aliceblue;
+}
+
+@media (max-width: 767px) {
+    #nav-buttons {
         width: auto;
+        text-align: right;
     }
-    
-    #section2 .container {
-        width: auto;
-        height: auto;
-    }
-    
-    #section1 h1 {
-        height: auto;
-        width: auto;
+    #about-me h1 {
         text-align: center;
         float: none;
-        margin: 0 auto;
         font-size: 30px;
     }
-    
-    #me {
+    #me{
         margin: 0 auto;
-        margin-top: 20px;
         float: none;
     }
-    
-    #section2 h1 {
-        font-size: 30px;
-        height: auto;
-        margin: 0 auto;
-        width: auto;
-        text-align: center;
+    .well{
+    margin: 50px 0 50px 0;
     }
     
-    #section2 #text1 {
-        margin: 100px 20px;
-        width: 80%;
+    #text1, #text2{
         font-size: 22px;
     }
     
-    #section2 #text2 {
-        top:-20px;
-        margin-right: 20px;
-        width: 80%;
-        font-size: 25px;
-        text-align: right;
-    }
-    
-    #section3 .container {
-        width: auto;
-        height: auto;
-    }
-    
-    #section3 h1 {
-        width: 50%;
+    #section2 h1{
         font-size: 30px;
-        margin: 0 auto;
-        text-align: center;
-        padding-bottom: 25px;
+        padding-top: 60px;
     }
     
-    #section3 #form {
-        margin: 0 auto;
-        background-color: none;
-        float: none;
-        width: 80%;
+    #section3 h1{
+        font-size: 2
     }
     
-    #section3 #links {
-        float: none;
-        height: 40px;
-        width: 220px;
-        margin: 25px auto;
+    #form{
+    width: 100%;
     }
     
-    #section3 img {
-        height: 80%;
+    #links{
+    margin: 20px 0px;
+    width: 100%;
+    text-align: center;
     }
     
-    #section3 textarea {
-        width: 90%;
+    #links img{
+    width: 40px;
     }
     
-    #button {
-        width: 92%;        
+    #links a{
+    width: 40px;
     }
-
 }
-

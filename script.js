@@ -1,16 +1,35 @@
-document.getElementById("button").onclick = function() {
-    alert("Thanks!");
-};
+$(document).ready(function(){
+    var swap1 = $(".glyphicon").css("color");
+    var swap2 ="white";
+    var swap;
     
-$("#circle").click(function(){
-    alert("I'm Here!");
+    $("#navbar-btn").click(function() {
+        var scrollPosition = $(document).scrollTop();
+        swap = swap2;
+        swap2=swap1;
+        swap1=swap;
+        if(scrollPosition===0){
+            $("#span-btn").toggleClass("glyphicon-minus");
+            $("#navbar").toggleClass("scrolled");
+            $("#navbar a, .glyphicon").css("color",swap);
+        }else{
+            $("#span-btn").toggleClass("glyphicon-minus");
+            $("#navbar").addClass("scrolled");
+            $("#navbar a, .glyphicon").css("color","white");
+        }
+    });
+    
+    $(document).scroll(function(){
+        /*swap1 = $(".glyphicon").css("color");
+        swap2 ="white";*/
+        var scrollPosition = $(this).scrollTop();
+        if(scrollPosition !== 0){
+            $("#navbar").addClass("scrolled");
+            $("#navbar a, .glyphicon").css("color","white");
+        }else{
+            $("#navbar").removeClass("scrolled");
+            $("#navbar a, .glyphicon").css("color","rgb(255,215,10)");
+        }
+    });
 });
 
-$("#me").click(function(){
-    alert("Yep, it's me!")
-});
-
-var test = document.getElementsByTagName("input");
-for(var i=0; i<test.length-1; i++){
-    test[i].style.width = "90%";
-}
